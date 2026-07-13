@@ -1,0 +1,1280 @@
+]1341;command_started;command=666f72206461746173657420696e206e736c2d6b646420756e73772d6e6231352063696364646f73323031392063696369647332303137206b646463757031393939>>> QUANTUM: nsl-kdd k=2
+Loaded 1000 vectors from nsl-kdd
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for nsl-kdd
+
+============================================================
+QUANTUM SVM 2-FOLD CROSS-VALIDATION (NSL-KDD)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/2: Starting...
+Fold 1/2: Computing kernel matrices...
+Fold 1/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k2_fold1_scores.npy
+  Accuracy:    0.8700
+  Precision:   0.9793
+  Recall:      0.7560
+  F1-Score:    0.8533
+  AUC:         0.9245
+  Sensitivity: 0.7560
+  Specificity: 0.9840
+
+Fold 2/2: Starting...
+Fold 2/2: Computing kernel matrices...
+Fold 2/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k2_fold2_scores.npy
+  Accuracy:    0.8720
+  Precision:   0.9515
+  Recall:      0.7840
+  F1-Score:    0.8596
+  AUC:         0.9292
+  Sensitivity: 0.7840
+  Specificity: 0.9600
+
+============================================================
+AVERAGE ACROSS 2 VALID FOLDS:
+  Accuracy:    0.8710
+  Precision:   0.9654
+  Recall:      0.7700
+  F1-Score:    0.8565
+  Sensitivity: 0.7700
+  Specificity: 0.9720
+  AUC:         0.9268
+============================================================
+>>> QUANTUM: nsl-kdd k=3
+Loaded 1000 vectors from nsl-kdd
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for nsl-kdd
+
+============================================================
+QUANTUM SVM 3-FOLD CROSS-VALIDATION (NSL-KDD)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/3: Starting...
+Fold 1/3: Computing kernel matrices...
+Fold 1/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k3_fold1_scores.npy
+  Accuracy:    0.8533
+  Precision:   0.9758
+  Recall:      0.7246
+  F1-Score:    0.8316
+  AUC:         0.9272
+  Sensitivity: 0.7246
+  Specificity: 0.9820
+
+Fold 2/3: Starting...
+Fold 2/3: Computing kernel matrices...
+Fold 2/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k3_fold2_scores.npy
+  Accuracy:    0.8619
+  Precision:   0.9172
+  Recall:      0.7964
+  F1-Score:    0.8526
+  AUC:         0.9277
+  Sensitivity: 0.7964
+  Specificity: 0.9277
+
+Fold 3/3: Starting...
+Fold 3/3: Computing kernel matrices...
+Fold 3/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k3_fold3_scores.npy
+  Accuracy:    0.8769
+  Precision:   0.9771
+  Recall:      0.7711
+  F1-Score:    0.8620
+  AUC:         0.9442
+  Sensitivity: 0.7711
+  Specificity: 0.9820
+
+============================================================
+AVERAGE ACROSS 3 VALID FOLDS:
+  Accuracy:    0.8640
+  Precision:   0.9567
+  Recall:      0.7640
+  F1-Score:    0.8487
+  Sensitivity: 0.7640
+  Specificity: 0.9639
+  AUC:         0.9330
+============================================================
+>>> QUANTUM: nsl-kdd k=4
+Loaded 1000 vectors from nsl-kdd
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for nsl-kdd
+
+============================================================
+QUANTUM SVM 4-FOLD CROSS-VALIDATION (NSL-KDD)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/4: Starting...
+Fold 1/4: Computing kernel matrices...
+Fold 1/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k4_fold1_scores.npy
+  Accuracy:    0.8400
+  Precision:   0.9570
+  Recall:      0.7120
+  F1-Score:    0.8165
+  AUC:         0.9118
+  Sensitivity: 0.7120
+  Specificity: 0.9680
+
+Fold 2/4: Starting...
+Fold 2/4: Computing kernel matrices...
+Fold 2/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k4_fold2_scores.npy
+  Accuracy:    0.8840
+  Precision:   0.9615
+  Recall:      0.8000
+  F1-Score:    0.8734
+  AUC:         0.9277
+  Sensitivity: 0.8000
+  Specificity: 0.9680
+
+Fold 3/4: Starting...
+Fold 3/4: Computing kernel matrices...
+Fold 3/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k4_fold3_scores.npy
+  Accuracy:    0.8640
+  Precision:   0.9333
+  Recall:      0.7840
+  F1-Score:    0.8522
+  AUC:         0.9515
+  Sensitivity: 0.7840
+  Specificity: 0.9440
+
+Fold 4/4: Starting...
+Fold 4/4: Computing kernel matrices...
+Fold 4/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k4_fold4_scores.npy
+  Accuracy:    0.8760
+  Precision:   0.9608
+  Recall:      0.7840
+  F1-Score:    0.8634
+  AUC:         0.9362
+  Sensitivity: 0.7840
+  Specificity: 0.9680
+
+============================================================
+AVERAGE ACROSS 4 VALID FOLDS:
+  Accuracy:    0.8660
+  Precision:   0.9532
+  Recall:      0.7700
+  F1-Score:    0.8514
+  Sensitivity: 0.7700
+  Specificity: 0.9620
+  AUC:         0.9318
+============================================================
+>>> QUANTUM: nsl-kdd k=5
+Loaded 1000 vectors from nsl-kdd
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for nsl-kdd
+
+============================================================
+QUANTUM SVM 5-FOLD CROSS-VALIDATION (NSL-KDD)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/5: Starting...
+Fold 1/5: Computing kernel matrices...
+Fold 1/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k5_fold1_scores.npy
+  Accuracy:    0.8300
+  Precision:   0.9459
+  Recall:      0.7000
+  F1-Score:    0.8046
+  AUC:         0.9080
+  Sensitivity: 0.7000
+  Specificity: 0.9600
+
+Fold 2/5: Starting...
+Fold 2/5: Computing kernel matrices...
+Fold 2/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k5_fold2_scores.npy
+  Accuracy:    0.8850
+  Precision:   0.9639
+  Recall:      0.8000
+  F1-Score:    0.8743
+  AUC:         0.9435
+  Sensitivity: 0.8000
+  Specificity: 0.9700
+
+Fold 3/5: Starting...
+Fold 3/5: Computing kernel matrices...
+Fold 3/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k5_fold3_scores.npy
+  Accuracy:    0.8900
+  Precision:   0.9875
+  Recall:      0.7900
+  F1-Score:    0.8778
+  AUC:         0.9248
+  Sensitivity: 0.7900
+  Specificity: 0.9900
+
+Fold 4/5: Starting...
+Fold 4/5: Computing kernel matrices...
+Fold 4/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k5_fold4_scores.npy
+  Accuracy:    0.8600
+  Precision:   0.9286
+  Recall:      0.7800
+  F1-Score:    0.8478
+  AUC:         0.9417
+  Sensitivity: 0.7800
+  Specificity: 0.9400
+
+Fold 5/5: Starting...
+Fold 5/5: Computing kernel matrices...
+Fold 5/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/nsl-kdd_k5_fold5_scores.npy
+  Accuracy:    0.8700
+  Precision:   0.9512
+  Recall:      0.7800
+  F1-Score:    0.8571
+  AUC:         0.9407
+  Sensitivity: 0.7800
+  Specificity: 0.9600
+
+============================================================
+AVERAGE ACROSS 5 VALID FOLDS:
+  Accuracy:    0.8670
+  Precision:   0.9554
+  Recall:      0.7700
+  F1-Score:    0.8523
+  Sensitivity: 0.7700
+  Specificity: 0.9640
+  AUC:         0.9317
+============================================================
+>>> QUANTUM: unsw-nb15 k=2
+Loaded 1000 vectors from unsw-nb15
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for unsw-nb15
+
+============================================================
+QUANTUM SVM 2-FOLD CROSS-VALIDATION (UNSW-NB15)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/2: Starting...
+Fold 1/2: Computing kernel matrices...
+Fold 1/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k2_fold1_scores.npy
+  Accuracy:    0.8480
+  Precision:   0.8750
+  Recall:      0.8120
+  F1-Score:    0.8423
+  AUC:         0.9246
+  Sensitivity: 0.8120
+  Specificity: 0.8840
+
+Fold 2/2: Starting...
+Fold 2/2: Computing kernel matrices...
+Fold 2/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k2_fold2_scores.npy
+  Accuracy:    0.8500
+  Precision:   0.8182
+  Recall:      0.9000
+  F1-Score:    0.8571
+  AUC:         0.9221
+  Sensitivity: 0.9000
+  Specificity: 0.8000
+
+============================================================
+AVERAGE ACROSS 2 VALID FOLDS:
+  Accuracy:    0.8490
+  Precision:   0.8466
+  Recall:      0.8560
+  F1-Score:    0.8497
+  Sensitivity: 0.8560
+  Specificity: 0.8420
+  AUC:         0.9233
+============================================================
+>>> QUANTUM: unsw-nb15 k=3
+Loaded 1000 vectors from unsw-nb15
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for unsw-nb15
+
+============================================================
+QUANTUM SVM 3-FOLD CROSS-VALIDATION (UNSW-NB15)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/3: Starting...
+Fold 1/3: Computing kernel matrices...
+Fold 1/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k3_fold1_scores.npy
+  Accuracy:    0.8563
+  Precision:   0.8889
+  Recall:      0.8144
+  F1-Score:    0.8500
+  AUC:         0.9342
+  Sensitivity: 0.8144
+  Specificity: 0.8982
+
+Fold 2/3: Starting...
+Fold 2/3: Computing kernel matrices...
+Fold 2/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k3_fold2_scores.npy
+  Accuracy:    0.8438
+  Precision:   0.8249
+  Recall:      0.8743
+  F1-Score:    0.8488
+  AUC:         0.8805
+  Sensitivity: 0.8743
+  Specificity: 0.8133
+
+Fold 3/3: Starting...
+Fold 3/3: Computing kernel matrices...
+Fold 3/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k3_fold3_scores.npy
+  Accuracy:    0.8619
+  Precision:   0.8448
+  Recall:      0.8855
+  F1-Score:    0.8647
+  AUC:         0.9220
+  Sensitivity: 0.8855
+  Specificity: 0.8383
+
+============================================================
+AVERAGE ACROSS 3 VALID FOLDS:
+  Accuracy:    0.8540
+  Precision:   0.8529
+  Recall:      0.8581
+  F1-Score:    0.8545
+  Sensitivity: 0.8581
+  Specificity: 0.8499
+  AUC:         0.9123
+============================================================
+>>> QUANTUM: unsw-nb15 k=4
+Loaded 1000 vectors from unsw-nb15
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for unsw-nb15
+
+============================================================
+QUANTUM SVM 4-FOLD CROSS-VALIDATION (UNSW-NB15)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/4: Starting...
+Fold 1/4: Computing kernel matrices...
+Fold 1/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k4_fold1_scores.npy
+  Accuracy:    0.8680
+  Precision:   0.8833
+  Recall:      0.8480
+  F1-Score:    0.8653
+  AUC:         0.9427
+  Sensitivity: 0.8480
+  Specificity: 0.8880
+
+Fold 2/4: Starting...
+Fold 2/4: Computing kernel matrices...
+Fold 2/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k4_fold2_scores.npy
+  Accuracy:    0.8360
+  Precision:   0.8231
+  Recall:      0.8560
+  F1-Score:    0.8392
+  AUC:         0.8964
+  Sensitivity: 0.8560
+  Specificity: 0.8160
+
+Fold 3/4: Starting...
+Fold 3/4: Computing kernel matrices...
+Fold 3/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k4_fold3_scores.npy
+  Accuracy:    0.8640
+  Precision:   0.8321
+  Recall:      0.9120
+  F1-Score:    0.8702
+  AUC:         0.9074
+  Sensitivity: 0.9120
+  Specificity: 0.8160
+
+Fold 4/4: Starting...
+Fold 4/4: Computing kernel matrices...
+Fold 4/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k4_fold4_scores.npy
+  Accuracy:    0.8640
+  Precision:   0.8473
+  Recall:      0.8880
+  F1-Score:    0.8672
+  AUC:         0.9216
+  Sensitivity: 0.8880
+  Specificity: 0.8400
+
+============================================================
+AVERAGE ACROSS 4 VALID FOLDS:
+  Accuracy:    0.8580
+  Precision:   0.8465
+  Recall:      0.8760
+  F1-Score:    0.8605
+  Sensitivity: 0.8760
+  Specificity: 0.8400
+  AUC:         0.9170
+============================================================
+>>> QUANTUM: unsw-nb15 k=5
+Loaded 1000 vectors from unsw-nb15
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for unsw-nb15
+
+============================================================
+QUANTUM SVM 5-FOLD CROSS-VALIDATION (UNSW-NB15)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/5: Starting...
+Fold 1/5: Computing kernel matrices...
+Fold 1/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k5_fold1_scores.npy
+  Accuracy:    0.8500
+  Precision:   0.8723
+  Recall:      0.8200
+  F1-Score:    0.8454
+  AUC:         0.9401
+  Sensitivity: 0.8200
+  Specificity: 0.8800
+
+Fold 2/5: Starting...
+Fold 2/5: Computing kernel matrices...
+Fold 2/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k5_fold2_scores.npy
+  Accuracy:    0.8750
+  Precision:   0.8571
+  Recall:      0.9000
+  F1-Score:    0.8780
+  AUC:         0.9350
+  Sensitivity: 0.9000
+  Specificity: 0.8500
+
+Fold 3/5: Starting...
+Fold 3/5: Computing kernel matrices...
+Fold 3/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k5_fold3_scores.npy
+  Accuracy:    0.8250
+  Precision:   0.7982
+  Recall:      0.8700
+  F1-Score:    0.8325
+  AUC:         0.8619
+  Sensitivity: 0.8700
+  Specificity: 0.7800
+
+Fold 4/5: Starting...
+Fold 4/5: Computing kernel matrices...
+Fold 4/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k5_fold4_scores.npy
+  Accuracy:    0.8650
+  Precision:   0.8349
+  Recall:      0.9100
+  F1-Score:    0.8708
+  AUC:         0.9288
+  Sensitivity: 0.9100
+  Specificity: 0.8200
+
+Fold 5/5: Starting...
+Fold 5/5: Computing kernel matrices...
+Fold 5/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/unsw-nb15_k5_fold5_scores.npy
+  Accuracy:    0.8600
+  Precision:   0.8600
+  Recall:      0.8600
+  F1-Score:    0.8600
+  AUC:         0.9148
+  Sensitivity: 0.8600
+  Specificity: 0.8600
+
+============================================================
+AVERAGE ACROSS 5 VALID FOLDS:
+  Accuracy:    0.8550
+  Precision:   0.8445
+  Recall:      0.8720
+  F1-Score:    0.8574
+  Sensitivity: 0.8720
+  Specificity: 0.8380
+  AUC:         0.9161
+============================================================
+>>> QUANTUM: cicddos2019 k=2
+Loaded 1000 vectors from cicddos2019
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for cicddos2019
+
+============================================================
+QUANTUM SVM 2-FOLD CROSS-VALIDATION (CICDDOS2019)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/2: Starting...
+Fold 1/2: Computing kernel matrices...
+Fold 1/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k2_fold1_scores.npy
+  Accuracy:    0.9760
+  Precision:   0.9612
+  Recall:      0.9920
+  F1-Score:    0.9764
+  AUC:         0.9928
+  Sensitivity: 0.9920
+  Specificity: 0.9600
+
+Fold 2/2: Starting...
+Fold 2/2: Computing kernel matrices...
+Fold 2/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k2_fold2_scores.npy
+  Accuracy:    0.9200
+  Precision:   0.9487
+  Recall:      0.8880
+  F1-Score:    0.9174
+  AUC:         0.9770
+  Sensitivity: 0.8880
+  Specificity: 0.9520
+
+============================================================
+AVERAGE ACROSS 2 VALID FOLDS:
+  Accuracy:    0.9480
+  Precision:   0.9550
+  Recall:      0.9400
+  F1-Score:    0.9469
+  Sensitivity: 0.9400
+  Specificity: 0.9560
+  AUC:         0.9849
+============================================================
+>>> QUANTUM: cicddos2019 k=3
+Loaded 1000 vectors from cicddos2019
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for cicddos2019
+
+============================================================
+QUANTUM SVM 3-FOLD CROSS-VALIDATION (CICDDOS2019)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/3: Starting...
+Fold 1/3: Computing kernel matrices...
+Fold 1/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k3_fold1_scores.npy
+  Accuracy:    0.9431
+  Precision:   0.9022
+  Recall:      0.9940
+  F1-Score:    0.9459
+  AUC:         0.9905
+  Sensitivity: 0.9940
+  Specificity: 0.8922
+
+Fold 2/3: Starting...
+Fold 2/3: Computing kernel matrices...
+Fold 2/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k3_fold2_scores.npy
+  Accuracy:    0.9369
+  Precision:   0.9620
+  Recall:      0.9102
+  F1-Score:    0.9354
+  AUC:         0.9888
+  Sensitivity: 0.9102
+  Specificity: 0.9639
+
+Fold 3/3: Starting...
+Fold 3/3: Computing kernel matrices...
+Fold 3/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k3_fold3_scores.npy
+  Accuracy:    0.9219
+  Precision:   0.9430
+  Recall:      0.8976
+  F1-Score:    0.9198
+  AUC:         0.9814
+  Sensitivity: 0.8976
+  Specificity: 0.9461
+
+============================================================
+AVERAGE ACROSS 3 VALID FOLDS:
+  Accuracy:    0.9340
+  Precision:   0.9357
+  Recall:      0.9339
+  F1-Score:    0.9337
+  Sensitivity: 0.9339
+  Specificity: 0.9341
+  AUC:         0.9869
+============================================================
+>>> QUANTUM: cicddos2019 k=4
+Loaded 1000 vectors from cicddos2019
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for cicddos2019
+
+============================================================
+QUANTUM SVM 4-FOLD CROSS-VALIDATION (CICDDOS2019)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/4: Starting...
+Fold 1/4: Computing kernel matrices...
+Fold 1/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k4_fold1_scores.npy
+  Accuracy:    0.9320
+  Precision:   0.8857
+  Recall:      0.9920
+  F1-Score:    0.9358
+  AUC:         0.9882
+  Sensitivity: 0.9920
+  Specificity: 0.8720
+
+Fold 2/4: Starting...
+Fold 2/4: Computing kernel matrices...
+Fold 2/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k4_fold2_scores.npy
+  Accuracy:    0.9480
+  Precision:   0.9746
+  Recall:      0.9200
+  F1-Score:    0.9465
+  AUC:         0.9976
+  Sensitivity: 0.9200
+  Specificity: 0.9760
+
+Fold 3/4: Starting...
+Fold 3/4: Computing kernel matrices...
+Fold 3/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k4_fold3_scores.npy
+  Accuracy:    0.9640
+  Precision:   0.9603
+  Recall:      0.9680
+  F1-Score:    0.9641
+  AUC:         0.9805
+  Sensitivity: 0.9680
+  Specificity: 0.9600
+
+Fold 4/4: Starting...
+Fold 4/4: Computing kernel matrices...
+Fold 4/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k4_fold4_scores.npy
+  Accuracy:    0.9200
+  Precision:   0.9412
+  Recall:      0.8960
+  F1-Score:    0.9180
+  AUC:         0.9804
+  Sensitivity: 0.8960
+  Specificity: 0.9440
+
+============================================================
+AVERAGE ACROSS 4 VALID FOLDS:
+  Accuracy:    0.9410
+  Precision:   0.9404
+  Recall:      0.9440
+  F1-Score:    0.9411
+  Sensitivity: 0.9440
+  Specificity: 0.9380
+  AUC:         0.9867
+============================================================
+>>> QUANTUM: cicddos2019 k=5
+Loaded 1000 vectors from cicddos2019
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for cicddos2019
+
+============================================================
+QUANTUM SVM 5-FOLD CROSS-VALIDATION (CICDDOS2019)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/5: Starting...
+Fold 1/5: Computing kernel matrices...
+Fold 1/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k5_fold1_scores.npy
+  Accuracy:    0.9400
+  Precision:   0.9000
+  Recall:      0.9900
+  F1-Score:    0.9429
+  AUC:         0.9881
+  Sensitivity: 0.9900
+  Specificity: 0.8900
+
+Fold 2/5: Starting...
+Fold 2/5: Computing kernel matrices...
+Fold 2/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k5_fold2_scores.npy
+  Accuracy:    0.9550
+  Precision:   0.9174
+  Recall:      1.0000
+  F1-Score:    0.9569
+  AUC:         0.9970
+  Sensitivity: 1.0000
+  Specificity: 0.9100
+
+Fold 3/5: Starting...
+Fold 3/5: Computing kernel matrices...
+Fold 3/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k5_fold3_scores.npy
+  Accuracy:    0.9800
+  Precision:   0.9706
+  Recall:      0.9900
+  F1-Score:    0.9802
+  AUC:         0.9968
+  Sensitivity: 0.9900
+  Specificity: 0.9700
+
+Fold 4/5: Starting...
+Fold 4/5: Computing kernel matrices...
+Fold 4/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k5_fold4_scores.npy
+  Accuracy:    0.9050
+  Precision:   0.9451
+  Recall:      0.8600
+  F1-Score:    0.9005
+  AUC:         0.9734
+  Sensitivity: 0.8600
+  Specificity: 0.9500
+
+Fold 5/5: Starting...
+Fold 5/5: Computing kernel matrices...
+Fold 5/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicddos2019_k5_fold5_scores.npy
+  Accuracy:    0.9150
+  Precision:   0.9368
+  Recall:      0.8900
+  F1-Score:    0.9128
+  AUC:         0.9788
+  Sensitivity: 0.8900
+  Specificity: 0.9400
+
+============================================================
+AVERAGE ACROSS 5 VALID FOLDS:
+  Accuracy:    0.9390
+  Precision:   0.9340
+  Recall:      0.9460
+  F1-Score:    0.9387
+  Sensitivity: 0.9460
+  Specificity: 0.9320
+  AUC:         0.9868
+============================================================
+>>> QUANTUM: cicids2017 k=2
+Loaded 1000 vectors from cicids2017
+Attack: 500, Normal: 500
+
+Using FULL entanglement for cicids2017
+
+============================================================
+QUANTUM SVM 2-FOLD CROSS-VALIDATION (CICIDS2017)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, FULL, FidelityStatevectorKernel
+============================================================
+
+Fold 1/2: Starting...
+Fold 1/2: Computing kernel matrices...
+Fold 1/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k2_fold1_scores.npy
+  Accuracy:    0.8040
+  Precision:   0.8276
+  Recall:      0.7680
+  F1-Score:    0.7967
+  AUC:         0.8985
+  Sensitivity: 0.7680
+  Specificity: 0.8400
+
+Fold 2/2: Starting...
+Fold 2/2: Computing kernel matrices...
+Fold 2/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k2_fold2_scores.npy
+  Accuracy:    0.7980
+  Precision:   0.8253
+  Recall:      0.7560
+  F1-Score:    0.7891
+  AUC:         0.8763
+  Sensitivity: 0.7560
+  Specificity: 0.8400
+
+============================================================
+AVERAGE ACROSS 2 VALID FOLDS:
+  Accuracy:    0.8010
+  Precision:   0.8265
+  Recall:      0.7620
+  F1-Score:    0.7929
+  Sensitivity: 0.7620
+  Specificity: 0.8400
+  AUC:         0.8874
+============================================================
+>>> QUANTUM: cicids2017 k=3
+Loaded 1000 vectors from cicids2017
+Attack: 500, Normal: 500
+
+Using FULL entanglement for cicids2017
+
+============================================================
+QUANTUM SVM 3-FOLD CROSS-VALIDATION (CICIDS2017)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, FULL, FidelityStatevectorKernel
+============================================================
+
+Fold 1/3: Starting...
+Fold 1/3: Computing kernel matrices...
+Fold 1/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k3_fold1_scores.npy
+  Accuracy:    0.8234
+  Precision:   0.8253
+  Recall:      0.8204
+  F1-Score:    0.8228
+  AUC:         0.9096
+  Sensitivity: 0.8204
+  Specificity: 0.8263
+
+Fold 2/3: Starting...
+Fold 2/3: Computing kernel matrices...
+Fold 2/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k3_fold2_scores.npy
+  Accuracy:    0.8108
+  Precision:   0.8171
+  Recall:      0.8024
+  F1-Score:    0.8097
+  AUC:         0.8824
+  Sensitivity: 0.8024
+  Specificity: 0.8193
+
+Fold 3/3: Starting...
+Fold 3/3: Computing kernel matrices...
+Fold 3/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k3_fold3_scores.npy
+  Accuracy:    0.8168
+  Precision:   0.8477
+  Recall:      0.7711
+  F1-Score:    0.8076
+  AUC:         0.8923
+  Sensitivity: 0.7711
+  Specificity: 0.8623
+
+============================================================
+AVERAGE ACROSS 3 VALID FOLDS:
+  Accuracy:    0.8170
+  Precision:   0.8300
+  Recall:      0.7979
+  F1-Score:    0.8134
+  Sensitivity: 0.7979
+  Specificity: 0.8360
+  AUC:         0.8948
+============================================================
+>>> QUANTUM: cicids2017 k=4
+Loaded 1000 vectors from cicids2017
+Attack: 500, Normal: 500
+
+Using FULL entanglement for cicids2017
+
+============================================================
+QUANTUM SVM 4-FOLD CROSS-VALIDATION (CICIDS2017)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, FULL, FidelityStatevectorKernel
+============================================================
+
+Fold 1/4: Starting...
+Fold 1/4: Computing kernel matrices...
+Fold 1/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k4_fold1_scores.npy
+  Accuracy:    0.8160
+  Precision:   0.8211
+  Recall:      0.8080
+  F1-Score:    0.8145
+  AUC:         0.8972
+  Sensitivity: 0.8080
+  Specificity: 0.8240
+
+Fold 2/4: Starting...
+Fold 2/4: Computing kernel matrices...
+Fold 2/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k4_fold2_scores.npy
+  Accuracy:    0.8480
+  Precision:   0.8537
+  Recall:      0.8400
+  F1-Score:    0.8468
+  AUC:         0.9162
+  Sensitivity: 0.8400
+  Specificity: 0.8560
+
+Fold 3/4: Starting...
+Fold 3/4: Computing kernel matrices...
+Fold 3/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k4_fold3_scores.npy
+  Accuracy:    0.8040
+  Precision:   0.8167
+  Recall:      0.7840
+  F1-Score:    0.8000
+  AUC:         0.8800
+  Sensitivity: 0.7840
+  Specificity: 0.8240
+
+Fold 4/4: Starting...
+Fold 4/4: Computing kernel matrices...
+Fold 4/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k4_fold4_scores.npy
+  Accuracy:    0.8000
+  Precision:   0.8000
+  Recall:      0.8000
+  F1-Score:    0.8000
+  AUC:         0.8875
+  Sensitivity: 0.8000
+  Specificity: 0.8000
+
+============================================================
+AVERAGE ACROSS 4 VALID FOLDS:
+  Accuracy:    0.8170
+  Precision:   0.8229
+  Recall:      0.8080
+  F1-Score:    0.8153
+  Sensitivity: 0.8080
+  Specificity: 0.8260
+  AUC:         0.8952
+============================================================
+>>> QUANTUM: cicids2017 k=5
+Loaded 1000 vectors from cicids2017
+Attack: 500, Normal: 500
+
+Using FULL entanglement for cicids2017
+
+============================================================
+QUANTUM SVM 5-FOLD CROSS-VALIDATION (CICIDS2017)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, FULL, FidelityStatevectorKernel
+============================================================
+
+Fold 1/5: Starting...
+Fold 1/5: Computing kernel matrices...
+Fold 1/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k5_fold1_scores.npy
+  Accuracy:    0.8150
+  Precision:   0.8119
+  Recall:      0.8200
+  F1-Score:    0.8159
+  AUC:         0.8940
+  Sensitivity: 0.8200
+  Specificity: 0.8100
+
+Fold 2/5: Starting...
+Fold 2/5: Computing kernel matrices...
+Fold 2/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k5_fold2_scores.npy
+  Accuracy:    0.8550
+  Precision:   0.8660
+  Recall:      0.8400
+  F1-Score:    0.8528
+  AUC:         0.9254
+  Sensitivity: 0.8400
+  Specificity: 0.8700
+
+Fold 3/5: Starting...
+Fold 3/5: Computing kernel matrices...
+Fold 3/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k5_fold3_scores.npy
+  Accuracy:    0.8150
+  Precision:   0.8316
+  Recall:      0.7900
+  F1-Score:    0.8103
+  AUC:         0.8754
+  Sensitivity: 0.7900
+  Specificity: 0.8400
+
+Fold 4/5: Starting...
+Fold 4/5: Computing kernel matrices...
+Fold 4/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k5_fold4_scores.npy
+  Accuracy:    0.8150
+  Precision:   0.8247
+  Recall:      0.8000
+  F1-Score:    0.8122
+  AUC:         0.8973
+  Sensitivity: 0.8000
+  Specificity: 0.8300
+
+Fold 5/5: Starting...
+Fold 5/5: Computing kernel matrices...
+Fold 5/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/cicids2017_k5_fold5_scores.npy
+  Accuracy:    0.8300
+  Precision:   0.8667
+  Recall:      0.7800
+  F1-Score:    0.8211
+  AUC:         0.9028
+  Sensitivity: 0.7800
+  Specificity: 0.8800
+
+============================================================
+AVERAGE ACROSS 5 VALID FOLDS:
+  Accuracy:    0.8260
+  Precision:   0.8402
+  Recall:      0.8060
+  F1-Score:    0.8224
+  Sensitivity: 0.8060
+  Specificity: 0.8460
+  AUC:         0.8990
+============================================================
+>>> QUANTUM: kddcup1999 k=2
+Loaded 1000 vectors from kddcup1999
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for kddcup1999
+
+============================================================
+QUANTUM SVM 2-FOLD CROSS-VALIDATION (KDDCUP1999)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/2: Starting...
+Fold 1/2: Computing kernel matrices...
+Fold 1/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k2_fold1_scores.npy
+  Accuracy:    0.9860
+  Precision:   1.0000
+  Recall:      0.9720
+  F1-Score:    0.9858
+  AUC:         0.9924
+  Sensitivity: 0.9720
+  Specificity: 1.0000
+
+Fold 2/2: Starting...
+Fold 2/2: Computing kernel matrices...
+Fold 2/2: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k2_fold2_scores.npy
+  Accuracy:    0.9920
+  Precision:   1.0000
+  Recall:      0.9840
+  F1-Score:    0.9919
+  AUC:         0.9968
+  Sensitivity: 0.9840
+  Specificity: 1.0000
+
+============================================================
+AVERAGE ACROSS 2 VALID FOLDS:
+  Accuracy:    0.9890
+  Precision:   1.0000
+  Recall:      0.9780
+  F1-Score:    0.9889
+  Sensitivity: 0.9780
+  Specificity: 1.0000
+  AUC:         0.9946
+============================================================
+>>> QUANTUM: kddcup1999 k=3
+Loaded 1000 vectors from kddcup1999
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for kddcup1999
+
+============================================================
+QUANTUM SVM 3-FOLD CROSS-VALIDATION (KDDCUP1999)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/3: Starting...
+Fold 1/3: Computing kernel matrices...
+Fold 1/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k3_fold1_scores.npy
+  Accuracy:    0.9850
+  Precision:   1.0000
+  Recall:      0.9701
+  F1-Score:    0.9848
+  AUC:         0.9883
+  Sensitivity: 0.9701
+  Specificity: 1.0000
+
+Fold 2/3: Starting...
+Fold 2/3: Computing kernel matrices...
+Fold 2/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k3_fold2_scores.npy
+  Accuracy:    1.0000
+  Precision:   1.0000
+  Recall:      1.0000
+  F1-Score:    1.0000
+  AUC:         1.0000
+  Sensitivity: 1.0000
+  Specificity: 1.0000
+
+Fold 3/3: Starting...
+Fold 3/3: Computing kernel matrices...
+Fold 3/3: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k3_fold3_scores.npy
+  Accuracy:    0.9910
+  Precision:   1.0000
+  Recall:      0.9819
+  F1-Score:    0.9909
+  AUC:         0.9954
+  Sensitivity: 0.9819
+  Specificity: 1.0000
+
+============================================================
+AVERAGE ACROSS 3 VALID FOLDS:
+  Accuracy:    0.9920
+  Precision:   1.0000
+  Recall:      0.9840
+  F1-Score:    0.9919
+  Sensitivity: 0.9840
+  Specificity: 1.0000
+  AUC:         0.9946
+============================================================
+>>> QUANTUM: kddcup1999 k=4
+Loaded 1000 vectors from kddcup1999
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for kddcup1999
+
+============================================================
+QUANTUM SVM 4-FOLD CROSS-VALIDATION (KDDCUP1999)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/4: Starting...
+Fold 1/4: Computing kernel matrices...
+Fold 1/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k4_fold1_scores.npy
+  Accuracy:    0.9880
+  Precision:   1.0000
+  Recall:      0.9760
+  F1-Score:    0.9879
+  AUC:         0.9980
+  Sensitivity: 0.9760
+  Specificity: 1.0000
+
+Fold 2/4: Starting...
+Fold 2/4: Computing kernel matrices...
+Fold 2/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k4_fold2_scores.npy
+  Accuracy:    0.9920
+  Precision:   1.0000
+  Recall:      0.9840
+  F1-Score:    0.9919
+  AUC:         0.9886
+  Sensitivity: 0.9840
+  Specificity: 1.0000
+
+Fold 3/4: Starting...
+Fold 3/4: Computing kernel matrices...
+Fold 3/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k4_fold3_scores.npy
+  Accuracy:    1.0000
+  Precision:   1.0000
+  Recall:      1.0000
+  F1-Score:    1.0000
+  AUC:         1.0000
+  Sensitivity: 1.0000
+  Specificity: 1.0000
+
+Fold 4/4: Starting...
+Fold 4/4: Computing kernel matrices...
+Fold 4/4: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k4_fold4_scores.npy
+  Accuracy:    0.9880
+  Precision:   1.0000
+  Recall:      0.9760
+  F1-Score:    0.9879
+  AUC:         0.9945
+  Sensitivity: 0.9760
+  Specificity: 1.0000
+
+============================================================
+AVERAGE ACROSS 4 VALID FOLDS:
+  Accuracy:    0.9920
+  Precision:   1.0000
+  Recall:      0.9840
+  F1-Score:    0.9919
+  Sensitivity: 0.9840
+  Specificity: 1.0000
+  AUC:         0.9953
+============================================================
+>>> QUANTUM: kddcup1999 k=5
+Loaded 1000 vectors from kddcup1999
+Attack: 500, Normal: 500
+
+Using CIRCULAR entanglement for kddcup1999
+
+============================================================
+QUANTUM SVM 5-FOLD CROSS-VALIDATION (KDDCUP1999)
+WITH SCORE SAVING FOR ROC CURVES
+Config: zz_feature_map, reps=2, CIRCULAR, FidelityStatevectorKernel
+============================================================
+
+Fold 1/5: Starting...
+Fold 1/5: Computing kernel matrices...
+Fold 1/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k5_fold1_scores.npy
+  Accuracy:    0.9850
+  Precision:   1.0000
+  Recall:      0.9700
+  F1-Score:    0.9848
+  AUC:         0.9955
+  Sensitivity: 0.9700
+  Specificity: 1.0000
+
+Fold 2/5: Starting...
+Fold 2/5: Computing kernel matrices...
+Fold 2/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k5_fold2_scores.npy
+  Accuracy:    0.9900
+  Precision:   1.0000
+  Recall:      0.9800
+  F1-Score:    0.9899
+  AUC:         0.9846
+  Sensitivity: 0.9800
+  Specificity: 1.0000
+
+Fold 3/5: Starting...
+Fold 3/5: Computing kernel matrices...
+Fold 3/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k5_fold3_scores.npy
+  Accuracy:    1.0000
+  Precision:   1.0000
+  Recall:      1.0000
+  F1-Score:    1.0000
+  AUC:         1.0000
+  Sensitivity: 1.0000
+  Specificity: 1.0000
+
+Fold 4/5: Starting...
+Fold 4/5: Computing kernel matrices...
+Fold 4/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k5_fold4_scores.npy
+  Accuracy:    1.0000
+  Precision:   1.0000
+  Recall:      1.0000
+  F1-Score:    1.0000
+  AUC:         1.0000
+  Sensitivity: 1.0000
+  Specificity: 1.0000
+
+Fold 5/5: Starting...
+Fold 5/5: Computing kernel matrices...
+Fold 5/5: Training QSVM...
+  Saved scores: /root/ddos-framework/results/scores/quantum_svm/kddcup1999_k5_fold5_scores.npy
+  Accuracy:    0.9850
+  Precision:   1.0000
+  Recall:      0.9700
+  F1-Score:    0.9848
+  AUC:         0.9930
+  Sensitivity: 0.9700
+  Specificity: 1.0000
+
+============================================================
+AVERAGE ACROSS 5 VALID FOLDS:
+  Accuracy:    0.9920
+  Precision:   1.0000
+  Recall:      0.9840
+  F1-Score:    0.9919
+  Sensitivity: 0.9840
+  Specificity: 1.0000
+  AUC:         0.9946
+============================================================

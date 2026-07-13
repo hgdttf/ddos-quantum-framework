@@ -1,0 +1,200 @@
+]1341;command_started;command=666f72206461746173657420696e206e736c2d6b646420756e73772d6e6231352063696364646f73323031392063696369647332303137206b646463757031393939=== CLASSICAL NN nsl-kdd k=2 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.8960
+  Precision:   0.9714
+  Recall:      0.8160
+  F1-Score:    0.8869
+  Specificity: 0.9760
+=== CLASSICAL NN nsl-kdd k=3 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.8960
+  Precision:   0.9760
+  Recall:      0.8120
+  F1-Score:    0.8864
+  Specificity: 0.9800
+=== CLASSICAL NN nsl-kdd k=4 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.8880
+  Precision:   0.9660
+  Recall:      0.8040
+  F1-Score:    0.8773
+  Specificity: 0.9720
+=== CLASSICAL NN nsl-kdd k=5 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.8910
+  Precision:   0.9709
+  Recall:      0.8060
+  F1-Score:    0.8806
+  Specificity: 0.9760
+=== CLASSICAL NN unsw-nb15 k=2 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.8580
+  Precision:   0.8377
+  Recall:      0.8880
+  F1-Score:    0.8621
+  Specificity: 0.8280
+=== CLASSICAL NN unsw-nb15 k=3 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.8590
+  Precision:   0.8418
+  Recall:      0.8840
+  F1-Score:    0.8624
+  Specificity: 0.8340
+=== CLASSICAL NN unsw-nb15 k=4 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.8530
+  Precision:   0.8270
+  Recall:      0.8940
+  F1-Score:    0.8587
+  Specificity: 0.8120
+=== CLASSICAL NN unsw-nb15 k=5 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.8550
+  Precision:   0.8372
+  Recall:      0.8880
+  F1-Score:    0.8597
+  Specificity: 0.8220
+=== CLASSICAL NN cicddos2019 k=2 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.9190
+  Precision:   0.8986
+  Recall:      0.9440
+  F1-Score:    0.9203
+  Specificity: 0.8940
+=== CLASSICAL NN cicddos2019 k=3 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.9250
+  Precision:   0.9172
+  Recall:      0.9359
+  F1-Score:    0.9255
+  Specificity: 0.9140
+=== CLASSICAL NN cicddos2019 k=4 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.9220
+  Precision:   0.9023
+  Recall:      0.9480
+  F1-Score:    0.9238
+  Specificity: 0.8960
+=== CLASSICAL NN cicddos2019 k=5 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.9240
+  Precision:   0.8982
+  Recall:      0.9560
+  F1-Score:    0.9261
+  Specificity: 0.8920
+=== CLASSICAL NN cicids2017 k=2 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.8080
+  Precision:   0.8422
+  Recall:      0.7620
+  F1-Score:    0.7992
+  Specificity: 0.8540
+=== CLASSICAL NN cicids2017 k=3 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.8220
+  Precision:   0.8362
+  Recall:      0.8020
+  F1-Score:    0.8174
+  Specificity: 0.8420
+=== CLASSICAL NN cicids2017 k=4 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.8420
+  Precision:   0.8644
+  Recall:      0.8140
+  F1-Score:    0.8370
+  Specificity: 0.8700
+=== CLASSICAL NN cicids2017 k=5 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.8470
+  Precision:   0.8468
+  Recall:      0.8500
+  F1-Score:    0.8473
+  Specificity: 0.8440
+=== CLASSICAL NN kddcup1999 k=2 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.9900
+  Precision:   0.9980
+  Recall:      0.9820
+  F1-Score:    0.9899
+  Specificity: 0.9980
+=== CLASSICAL NN kddcup1999 k=3 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.9890
+  Precision:   0.9980
+  Recall:      0.9800
+  F1-Score:    0.9888
+  Specificity: 0.9980
+=== CLASSICAL NN kddcup1999 k=4 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.9900
+  Precision:   1.0000
+  Recall:      0.9800
+  F1-Score:    0.9899
+  Specificity: 1.0000
+=== CLASSICAL NN kddcup1999 k=5 ===
+Architecture: 2 hidden layers (128 -> 64), ReLU, Adam
+Scaler: MinMax [0, 1]
+
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.9890
+  Precision:   0.9980
+  Recall:      0.9800
+  F1-Score:    0.9888
+  Specificity: 0.9980

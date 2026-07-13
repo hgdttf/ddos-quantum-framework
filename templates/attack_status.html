@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attack Status</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; padding: 40px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        h1 { color: #d4af37; margin-bottom: 10px; }
+        .back { color: #6e6e80; text-decoration: none; display: inline-block; margin-bottom: 30px; }
+        .status-box { background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 16px; padding: 40px; text-align: center; }
+        .spinner { width: 50px; height: 50px; border: 4px solid #2a2a3a; border-top-color: #d4af37; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .running { color: #fbbf24; font-size: 18px; }
+        .subtext { color: #6e6e80; margin-top: 10px; font-size: 14px; }
+        .error { color: #f87171; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back">← Back to Home</a>
+        <h1>Processing</h1>
+
+        <div class="status-box">
+            {% if status.running %}
+                <div class="spinner"></div>
+                <p class="running">Running attack...</p>
+                <p class="subtext">{{ status.params.type }} | {{ status.params.intensity }} | {{ status.params.duration }}s</p>
+                <script>setTimeout(function() { location.reload(); }, 2000);</script>
+
+            {% elif status.error %}
+                <p class="error">❌ Error: {{ status.error }}</p>
+                <a href="/attack" style="display: inline-block; padding: 12px 24px; background: #d4af37; color: #0a0a0f; text-decoration: none; border-radius: 8px; font-weight: 600; margin-top: 20px;">Try Again</a>
+
+            {% else %}
+                <div class="spinner"></div>
+                <p class="running">Extracting features...</p>
+                <p class="subtext">Almost done</p>
+                <script>setTimeout(function() { location.reload(); }, 2000);</script>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

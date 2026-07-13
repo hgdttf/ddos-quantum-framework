@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Features Extracted</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; padding: 40px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { color: #d4af37; margin-bottom: 10px; }
+        .back { color: #6e6e80; text-decoration: none; display: inline-block; margin-bottom: 30px; }
+        .success { color: #4ade80; margin-bottom: 20px; }
+        .data-card { background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 16px; padding: 30px; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        th { text-align: left; padding: 12px; border-bottom: 2px solid #2a2a3a; color: #d4af37; font-size: 13px; text-transform: uppercase; }
+        td { padding: 12px; border-bottom: 1px solid #22222e; font-family: monospace; font-size: 13px; }
+        tr:hover { background: #22222e; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #d4af37;
+            color: #0a0a0f;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+        .btn-secondary {
+            background: #2a2a3a;
+            color: #fff;
+            border: 1px solid #3a3a4a;
+        }
+        code { background: #12121a; padding: 4px 8px; border-radius: 4px; color: #4ade80; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back">← Back to Home</a>
+        <h1>Features Extracted</h1>
+        <p class="success">✅ Feature extraction complete!</p>
+
+        <div class="data-card">
+            <p><strong>Source:</strong> <code>{{ pcap_file }}</code></p>
+            <p><strong>CSV Output:</strong> <code>{{ csv_file }}</code></p>
+        </div>
+
+        <div class="data-card">
+            <h3>Dataset (Normalized Features + Label)</h3>
+            <table>
+                <tr>
+                    <th>Window</th>
+                    <th>f₁ (Packets)</th>
+                    <th>f₂ (SYN Ratio)</th>
+                    <th>f₃ (Unique IPs)</th>
+                    <th>f₄ (HTTP Max)</th>
+                    <th>f₅ (Entropy)</th>
+                    <th>f₆ (UDP Count)</th>
+                    <th>Label</th>
+                </tr>
+                {% for row in dataset %}
+                <tr>
+                    <td>{{ loop.index0 }}</td>
+                    <td>{{ "%.4f"|format(row[0]) }}</td>
+                    <td>{{ "%.4f"|format(row[1]) }}</td>
+                    <td>{{ "%.4f"|format(row[2]) }}</td>
+                    <td>{{ "%.4f"|format(row[3]) }}</td>
+                    <td>{{ "%.4f"|format(row[4]) }}</td>
+                    <td>{{ "%.4f"|format(row[5]) }}</td>
+                    <td>{% if row[6] == 1 %}<span style="color:#f87171">Attack</span>{% else %}<span style="color:#4ade80">Normal</span>{% endif %}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <a href="/features" class="btn">Extract Another</a>
+        {% if auto_detection %}
+            <a href="/detection/result" class="btn btn-secondary">View Detection Results →</a>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Status</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; padding: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        h1 { color: #d4af37; margin-bottom: 10px; }
+        .back { color: #6e6e80; text-decoration: none; display: inline-block; margin-bottom: 30px; }
+        .status-box {
+            background: #1a1a24;
+            border: 1px solid #2a2a3a;
+            border-radius: 16px;
+            padding: 40px;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #2a2a3a;
+            border-top-color: #d4af37;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .running { color: #fbbf24; font-size: 18px; text-align: center; }
+        .alert-card {
+            background: rgba(248,113,113,0.1);
+            border: 1px solid rgba(248,113,113,0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .alert-card h3 { color: #f87171; margin-bottom: 10px; }
+        .alert-card p { color: #a0a0b0; font-size: 14px; margin-bottom: 5px; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #d4af37;
+            color: #0a0a0f;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back">← Back to Home</a>
+        <h1>Detection Status</h1>
+
+        <div class="status-box">
+            {% if status.running %}
+                <div class="spinner"></div>
+                <p class="running">Detection is running...</p>
+                <p style="text-align:center; color:#6e6e80; margin-top:10px;">{{ status.start_time }}</p>
+                <script>setTimeout(function() { location.reload(); }, 3000);</script>
+
+            {% else %}
+                <p style="color: #4ade80; font-size: 18px;">✅ Detection Complete</p>
+
+                {% if status.alerts %}
+                    {% for alert in status.alerts %}
+                    <div class="alert-card">
+                        <h3>🚨 Alert #{{ alert.alert_id }} — {{ alert.triggered }}</h3>
+                        <p>Time: {{ alert.timestamp }} ({{ alert.elapsed_s }}s elapsed)</p>
+                        <p>Confidence: {{ alert.confidence_pct }}%</p>
+                        <p>Features: f1={{ alert.f1 }}, f2={{ alert.f2 }}, f3={{ alert.f3 }}, f4={{ alert.f4 }}, f5={{ alert.f5 }}, f6={{ alert.f6 }}</p>
+                        <p>System Health: CPU={{ alert.rho_cpu }}%, MEM={{ alert.rho_mem }}%, NET={{ alert.rho_net }}%, AVG={{ alert.rho_avg }}%</p>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p style="color: #6e6e80; margin-top: 20px;">No attacks detected during monitoring period.</p>
+                {% endif %}
+
+                <a href="/detect" class="btn">Run Again</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

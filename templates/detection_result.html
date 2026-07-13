@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Results</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; padding: 40px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { color: #d4af37; margin-bottom: 10px; }
+        .back { color: #6e6e80; text-decoration: none; display: inline-block; margin-bottom: 30px; }
+        .status-box {
+            background: #1a1a24;
+            border: 1px solid #2a2a3a;
+            border-radius: 16px;
+            padding: 40px;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #2a2a3a;
+            border-top-color: #d4af37;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .running { color: #fbbf24; font-size: 18px; text-align: center; }
+        .alert-card {
+            background: rgba(248,113,113,0.1);
+            border: 1px solid rgba(248,113,113,0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .alert-card h3 { color: #f87171; margin-bottom: 10px; }
+        .alert-card p { color: #a0a0b0; font-size: 14px; margin-bottom: 5px; }
+        .normal-card {
+            background: rgba(74,222,128,0.1);
+            border: 1px solid rgba(74,222,128,0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .normal-card h3 { color: #4ade80; margin-bottom: 10px; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-box {
+            background: #12121a;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+        .stat-box .num { color: #d4af37; font-size: 28px; font-weight: bold; }
+        .stat-box .label { color: #6e6e80; font-size: 12px; margin-top: 5px; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #d4af37;
+            color: #0a0a0f;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back">← Back to Home</a>
+        <h1>Detection Results</h1>
+
+        <div class="status-box">
+            {% if status.running %}
+                <div class="spinner"></div>
+                <p class="running">Real-time detection is active...</p>
+                <p style="text-align:center; color:#6e6e80; margin-top:10px;">
+                    Started: {{ status.start_time }}
+                </p>
+
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="num">{{ status.alerts|length }}</div>
+                        <div class="label">Alerts Triggered</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="num">{{ status.detection_id or 'N/A' }}</div>
+                        <div class="label">Detection ID</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="num">Active</div>
+                        <div class="label">Status</div>
+                    </div>
+                </div>
+
+                {% if status.alerts %}
+                    {% for alert in status.alerts %}
+                    <div class="alert-card">
+                        <h3>🚨 Alert #{{ alert.alert_id }} — {{ alert.triggered }}</h3>
+                        <p>Time: {{ alert.timestamp }} ({{ alert.elapsed_s }}s elapsed)</p>
+                        <p>Confidence: {{ alert.confidence_pct }}%</p>
+                        <p>Features: f1={{ alert.f1 }}, f2={{ alert.f2 }}, f3={{ alert.f3 }}, f4={{ alert.f4 }}, f5={{ alert.f5 }}, f6={{ alert.f6 }}</p>
+                        <p>System Health: SYS_CPU={{ alert.sys_cpu }}% ATTACK_CPU={{ alert.attack_cpu }}% MEM={{ alert.rho_mem }}% LOAD={{ alert.rho_load }}% AVG={{ alert.rho_avg }}%</p>
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <p style="color: #6e6e80; margin-top: 20px; text-align: center;">No alerts yet. Monitoring continues...</p>
+                {% endif %}
+
+                <script>setTimeout(function() { location.reload(); }, 3000);</script>
+
+            {% else %}
+                {% if status.result %}
+                    <p style="color: #4ade80; font-size: 18px;">✅ Detection Complete</p>
+
+                    <div class="stats">
+                        <div class="stat-box">
+                            <div class="num">{{ status.result.alert_count }}</div>
+                            <div class="label">Total Alerts</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="num">{{ status.result.correlation_count }}</div>
+                            <div class="label">Correlations</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="num">{{ status.detection_id or 'N/A' }}</div>
+                            <div class="label">Detection ID</div>
+                        </div>
+                    </div>
+
+                    {% if status.alerts %}
+                        {% for alert in status.alerts %}
+                        <div class="alert-card">
+                            <h3>🚨 Alert #{{ alert.alert_id }} — {{ alert.triggered }}</h3>
+                            <p>Time: {{ alert.timestamp }} ({{ alert.elapsed_s }}s elapsed)</p>
+                            <p>Confidence: {{ alert.confidence_pct }}%</p>
+                            <p>Features: f1={{ alert.f1 }}, f2={{ alert.f2 }}, f3={{ alert.f3 }}, f4={{ alert.f4 }}, f5={{ alert.f5 }}, f6={{ alert.f6 }}</p>
+                            <p>System Health: SYS_CPU={{ alert.sys_cpu }}% ATTACK_CPU={{ alert.attack_cpu }}% MEM={{ alert.rho_mem }}% LOAD={{ alert.rho_load }}% AVG={{ alert.rho_avg }}%</p>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="normal-card">
+                            <h3>✅ No Attacks Detected</h3>
+                            <p>Traffic remained within normal thresholds throughout the monitoring period.</p>
+                        </div>
+                    {% endif %}
+
+                {% elif status.error %}
+                    <p style="color: #f87171; font-size: 18px;">❌ Error: {{ status.error }}</p>
+
+                {% else %}
+                    <p style="color: #6e6e80; text-align: center;">No detection has been run yet. Launch an attack or use manual detection.</p>
+                {% endif %}
+
+                <a href="/" class="btn">Back to Home</a>
+                <a href="/detect" class="btn" style="margin-left: 10px;">Run Manual Detection</a>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

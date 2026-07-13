@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extract Features - Algorithm 2</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; padding: 40px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        h1 { color: #d4af37; margin-bottom: 10px; }
+        .back { color: #6e6e80; text-decoration: none; display: inline-block; margin-bottom: 30px; }
+        .form-card { background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 16px; padding: 30px; }
+        label { display: block; color: #a0a0b0; margin: 20px 0 8px; font-size: 14px; }
+        input {
+            width: 100%;
+            padding: 12px;
+            background: #12121a;
+            border: 1px solid #2a2a3a;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+            font-family: monospace;
+        }
+        input:focus { outline: none; border-color: #d4af37; }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #d4af37;
+            color: #0a0a0f;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+        .error { color: #f87171; margin-top: 15px; padding: 12px; background: rgba(248,113,113,0.1); border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back">← Back to Home</a>
+        <h1>Extract Features</h1>
+
+        <div class="form-card">
+            <form method="POST" action="/features">
+                <label>PCAP File Path</label>
+                <input type="text" name="pcap_file" value="/root/ddos-framework/data/pcap/SYN_LOW_5s_20260616.pcap">
+
+                <label>Window Size (seconds)</label>
+                <input type="number" name="window_size" value="5" min="1" max="60">
+
+                <button type="submit">Extract Features</button>
+            </form>
+            {% if error %}
+                <p class="error">Error: {{ error }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html> 

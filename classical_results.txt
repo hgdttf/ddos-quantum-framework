@@ -1,0 +1,1100 @@
+]1341;command_started;command=666f72206461746173657420696e206e736c2d6b646420756e73772d6e6231352063696364646f73323031392063696369647332303137206b646463757031393939>>> CLASSICAL: nsl-kdd k=2
+Loaded 1000 vectors from nsl-kdd
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 2-FOLD CROSS-VALIDATION (NSL-KDD)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k2_fold1_scores.npy
+
+Fold 1/2: Training SVM...
+  Accuracy:    0.8820
+  Precision:   0.9659
+  Recall:      0.7920
+  F1-Score:    0.8703
+  AUC:         0.8995
+  Sensitivity: 0.7920
+  Specificity: 0.9720
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k2_fold2_scores.npy
+
+Fold 2/2: Training SVM...
+  Accuracy:    0.8940
+  Precision:   0.9624
+  Recall:      0.8200
+  F1-Score:    0.8855
+  AUC:         0.9031
+  Sensitivity: 0.8200
+  Specificity: 0.9680
+
+============================================================
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.8880
+  Precision:   0.9641
+  Recall:      0.8060
+  F1-Score:    0.8779
+  Sensitivity: 0.8060
+  Specificity: 0.9700
+  AUC:         0.9013
+============================================================
+>>> CLASSICAL: nsl-kdd k=3
+Loaded 1000 vectors from nsl-kdd
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 3-FOLD CROSS-VALIDATION (NSL-KDD)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k3_fold1_scores.npy
+
+Fold 1/3: Training SVM...
+  Accuracy:    0.8772
+  Precision:   0.9632
+  Recall:      0.7844
+  F1-Score:    0.8647
+  AUC:         0.8974
+  Sensitivity: 0.7844
+  Specificity: 0.9701
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k3_fold2_scores.npy
+
+Fold 2/3: Training SVM...
+  Accuracy:    0.9009
+  Precision:   0.9718
+  Recall:      0.8263
+  F1-Score:    0.8932
+  AUC:         0.9119
+  Sensitivity: 0.8263
+  Specificity: 0.9759
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k3_fold3_scores.npy
+
+Fold 3/3: Training SVM...
+  Accuracy:    0.8889
+  Precision:   0.9708
+  Recall:      0.8012
+  F1-Score:    0.8779
+  AUC:         0.8933
+  Sensitivity: 0.8012
+  Specificity: 0.9760
+
+============================================================
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.8890
+  Precision:   0.9686
+  Recall:      0.8040
+  F1-Score:    0.8786
+  Sensitivity: 0.8040
+  Specificity: 0.9740
+  AUC:         0.9009
+============================================================
+>>> CLASSICAL: nsl-kdd k=4
+Loaded 1000 vectors from nsl-kdd
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 4-FOLD CROSS-VALIDATION (NSL-KDD)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k4_fold1_scores.npy
+
+Fold 1/4: Training SVM...
+  Accuracy:    0.8600
+  Precision:   0.9592
+  Recall:      0.7520
+  F1-Score:    0.8430
+  AUC:         0.8684
+  Sensitivity: 0.7520
+  Specificity: 0.9680
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k4_fold2_scores.npy
+
+Fold 2/4: Training SVM...
+  Accuracy:    0.9040
+  Precision:   0.9810
+  Recall:      0.8240
+  F1-Score:    0.8957
+  AUC:         0.9180
+  Sensitivity: 0.8240
+  Specificity: 0.9840
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k4_fold3_scores.npy
+
+Fold 3/4: Training SVM...
+  Accuracy:    0.8960
+  Precision:   0.9626
+  Recall:      0.8240
+  F1-Score:    0.8879
+  AUC:         0.9111
+  Sensitivity: 0.8240
+  Specificity: 0.9680
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k4_fold4_scores.npy
+
+Fold 4/4: Training SVM...
+  Accuracy:    0.8920
+  Precision:   0.9712
+  Recall:      0.8080
+  F1-Score:    0.8821
+  AUC:         0.9109
+  Sensitivity: 0.8080
+  Specificity: 0.9760
+
+============================================================
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.8880
+  Precision:   0.9685
+  Recall:      0.8020
+  F1-Score:    0.8772
+  Sensitivity: 0.8020
+  Specificity: 0.9740
+  AUC:         0.9021
+============================================================
+>>> CLASSICAL: nsl-kdd k=5
+Loaded 1000 vectors from nsl-kdd
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 5-FOLD CROSS-VALIDATION (NSL-KDD)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k5_fold1_scores.npy
+
+Fold 1/5: Training SVM...
+  Accuracy:    0.8600
+  Precision:   0.9500
+  Recall:      0.7600
+  F1-Score:    0.8444
+  AUC:         0.8703
+  Sensitivity: 0.7600
+  Specificity: 0.9600
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k5_fold2_scores.npy
+
+Fold 2/5: Training SVM...
+  Accuracy:    0.9100
+  Precision:   0.9767
+  Recall:      0.8400
+  F1-Score:    0.9032
+  AUC:         0.9388
+  Sensitivity: 0.8400
+  Specificity: 0.9800
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k5_fold3_scores.npy
+
+Fold 3/5: Training SVM...
+  Accuracy:    0.8900
+  Precision:   0.9756
+  Recall:      0.8000
+  F1-Score:    0.8791
+  AUC:         0.8943
+  Sensitivity: 0.8000
+  Specificity: 0.9800
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k5_fold4_scores.npy
+
+Fold 4/5: Training SVM...
+  Accuracy:    0.8850
+  Precision:   0.9529
+  Recall:      0.8100
+  F1-Score:    0.8757
+  AUC:         0.9014
+  Sensitivity: 0.8100
+  Specificity: 0.9600
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/nsl-kdd_k5_fold5_scores.npy
+
+Fold 5/5: Training SVM...
+  Accuracy:    0.9000
+  Precision:   0.9878
+  Recall:      0.8100
+  F1-Score:    0.8901
+  AUC:         0.9046
+  Sensitivity: 0.8100
+  Specificity: 0.9900
+
+============================================================
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.8890
+  Precision:   0.9686
+  Recall:      0.8040
+  F1-Score:    0.8785
+  Sensitivity: 0.8040
+  Specificity: 0.9740
+  AUC:         0.9019
+============================================================
+>>> CLASSICAL: unsw-nb15 k=2
+Loaded 1000 vectors from unsw-nb15
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 2-FOLD CROSS-VALIDATION (UNSW-NB15)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k2_fold1_scores.npy
+
+Fold 1/2: Training SVM...
+  Accuracy:    0.7780
+  Precision:   0.8717
+  Recall:      0.6520
+  F1-Score:    0.7460
+  AUC:         0.9124
+  Sensitivity: 0.6520
+  Specificity: 0.9040
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k2_fold2_scores.npy
+
+Fold 2/2: Training SVM...
+  Accuracy:    0.8120
+  Precision:   0.7308
+  Recall:      0.9880
+  F1-Score:    0.8401
+  AUC:         0.9367
+  Sensitivity: 0.9880
+  Specificity: 0.6360
+
+============================================================
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.7950
+  Precision:   0.8012
+  Recall:      0.8200
+  F1-Score:    0.7931
+  Sensitivity: 0.8200
+  Specificity: 0.7700
+  AUC:         0.9246
+============================================================
+>>> CLASSICAL: unsw-nb15 k=3
+Loaded 1000 vectors from unsw-nb15
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 3-FOLD CROSS-VALIDATION (UNSW-NB15)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k3_fold1_scores.npy
+
+Fold 1/3: Training SVM...
+  Accuracy:    0.7994
+  Precision:   0.8906
+  Recall:      0.6826
+  F1-Score:    0.7729
+  AUC:         0.9190
+  Sensitivity: 0.6826
+  Specificity: 0.9162
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k3_fold2_scores.npy
+
+Fold 2/3: Training SVM...
+  Accuracy:    0.7988
+  Precision:   0.7193
+  Recall:      0.9820
+  F1-Score:    0.8304
+  AUC:         0.9121
+  Sensitivity: 0.9820
+  Specificity: 0.6145
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k3_fold3_scores.npy
+
+Fold 3/3: Training SVM...
+  Accuracy:    0.8258
+  Precision:   0.7455
+  Recall:      0.9880
+  F1-Score:    0.8497
+  AUC:         0.9488
+  Sensitivity: 0.9880
+  Specificity: 0.6647
+
+============================================================
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.8080
+  Precision:   0.7851
+  Recall:      0.8842
+  F1-Score:    0.8177
+  Sensitivity: 0.8842
+  Specificity: 0.7318
+  AUC:         0.9266
+============================================================
+>>> CLASSICAL: unsw-nb15 k=4
+Loaded 1000 vectors from unsw-nb15
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 4-FOLD CROSS-VALIDATION (UNSW-NB15)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k4_fold1_scores.npy
+
+Fold 1/4: Training SVM...
+  Accuracy:    0.8400
+  Precision:   0.7673
+  Recall:      0.9760
+  F1-Score:    0.8592
+  AUC:         0.9333
+  Sensitivity: 0.9760
+  Specificity: 0.7040
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k4_fold2_scores.npy
+
+Fold 2/4: Training SVM...
+  Accuracy:    0.7600
+  Precision:   0.8652
+  Recall:      0.6160
+  F1-Score:    0.7196
+  AUC:         0.9171
+  Sensitivity: 0.6160
+  Specificity: 0.9040
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k4_fold3_scores.npy
+
+Fold 3/4: Training SVM...
+  Accuracy:    0.7960
+  Precision:   0.7151
+  Recall:      0.9840
+  F1-Score:    0.8283
+  AUC:         0.9244
+  Sensitivity: 0.9840
+  Specificity: 0.6080
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k4_fold4_scores.npy
+
+Fold 4/4: Training SVM...
+  Accuracy:    0.8360
+  Precision:   0.7561
+  Recall:      0.9920
+  F1-Score:    0.8581
+  AUC:         0.9476
+  Sensitivity: 0.9920
+  Specificity: 0.6800
+
+============================================================
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.8080
+  Precision:   0.7759
+  Recall:      0.8920
+  F1-Score:    0.8163
+  Sensitivity: 0.8920
+  Specificity: 0.7240
+  AUC:         0.9306
+============================================================
+>>> CLASSICAL: unsw-nb15 k=5
+Loaded 1000 vectors from unsw-nb15
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 5-FOLD CROSS-VALIDATION (UNSW-NB15)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k5_fold1_scores.npy
+
+Fold 1/5: Training SVM...
+  Accuracy:    0.8300
+  Precision:   0.7463
+  Recall:      1.0000
+  F1-Score:    0.8547
+  AUC:         0.9354
+  Sensitivity: 1.0000
+  Specificity: 0.6600
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k5_fold2_scores.npy
+
+Fold 2/5: Training SVM...
+  Accuracy:    0.8250
+  Precision:   0.8495
+  Recall:      0.7900
+  F1-Score:    0.8187
+  AUC:         0.9255
+  Sensitivity: 0.7900
+  Specificity: 0.8600
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k5_fold3_scores.npy
+
+Fold 3/5: Training SVM...
+  Accuracy:    0.8100
+  Precision:   0.7313
+  Recall:      0.9800
+  F1-Score:    0.8376
+  AUC:         0.9040
+  Sensitivity: 0.9800
+  Specificity: 0.6400
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k5_fold4_scores.npy
+
+Fold 4/5: Training SVM...
+  Accuracy:    0.7750
+  Precision:   0.6950
+  Recall:      0.9800
+  F1-Score:    0.8133
+  AUC:         0.9325
+  Sensitivity: 0.9800
+  Specificity: 0.5700
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/unsw-nb15_k5_fold5_scores.npy
+
+Fold 5/5: Training SVM...
+  Accuracy:    0.8650
+  Precision:   0.7920
+  Recall:      0.9900
+  F1-Score:    0.8800
+  AUC:         0.9544
+  Sensitivity: 0.9900
+  Specificity: 0.7400
+
+============================================================
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.8210
+  Precision:   0.7628
+  Recall:      0.9480
+  F1-Score:    0.8408
+  Sensitivity: 0.9480
+  Specificity: 0.6940
+  AUC:         0.9304
+============================================================
+>>> CLASSICAL: cicddos2019 k=2
+Loaded 1000 vectors from cicddos2019
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 2-FOLD CROSS-VALIDATION (CICDDOS2019)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k2_fold1_scores.npy
+
+Fold 1/2: Training SVM...
+  Accuracy:    0.8780
+  Precision:   0.8436
+  Recall:      0.9280
+  F1-Score:    0.8838
+  AUC:         0.9577
+  Sensitivity: 0.9280
+  Specificity: 0.8280
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k2_fold2_scores.npy
+
+Fold 2/2: Training SVM...
+  Accuracy:    0.8520
+  Precision:   0.8308
+  Recall:      0.8840
+  F1-Score:    0.8566
+  AUC:         0.9433
+  Sensitivity: 0.8840
+  Specificity: 0.8200
+
+============================================================
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.8650
+  Precision:   0.8372
+  Recall:      0.9060
+  F1-Score:    0.8702
+  Sensitivity: 0.9060
+  Specificity: 0.8240
+  AUC:         0.9505
+============================================================
+>>> CLASSICAL: cicddos2019 k=3
+Loaded 1000 vectors from cicddos2019
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 3-FOLD CROSS-VALIDATION (CICDDOS2019)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k3_fold1_scores.npy
+
+Fold 1/3: Training SVM...
+  Accuracy:    0.8892
+  Precision:   0.8533
+  Recall:      0.9401
+  F1-Score:    0.8946
+  AUC:         0.9804
+  Sensitivity: 0.9401
+  Specificity: 0.8383
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k3_fold2_scores.npy
+
+Fold 2/3: Training SVM...
+  Accuracy:    0.8649
+  Precision:   0.8389
+  Recall:      0.9042
+  F1-Score:    0.8703
+  AUC:         0.9593
+  Sensitivity: 0.9042
+  Specificity: 0.8253
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k3_fold3_scores.npy
+
+Fold 3/3: Training SVM...
+  Accuracy:    0.8498
+  Precision:   0.8295
+  Recall:      0.8795
+  F1-Score:    0.8538
+  AUC:         0.9539
+  Sensitivity: 0.8795
+  Specificity: 0.8204
+
+============================================================
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.8680
+  Precision:   0.8406
+  Recall:      0.9079
+  F1-Score:    0.8729
+  Sensitivity: 0.9079
+  Specificity: 0.8280
+  AUC:         0.9645
+============================================================
+>>> CLASSICAL: cicddos2019 k=4
+Loaded 1000 vectors from cicddos2019
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 4-FOLD CROSS-VALIDATION (CICDDOS2019)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k4_fold1_scores.npy
+
+Fold 1/4: Training SVM...
+  Accuracy:    0.8920
+  Precision:   0.8551
+  Recall:      0.9440
+  F1-Score:    0.8973
+  AUC:         0.9830
+  Sensitivity: 0.9440
+  Specificity: 0.8400
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k4_fold2_scores.npy
+
+Fold 2/4: Training SVM...
+  Accuracy:    0.8680
+  Precision:   0.8382
+  Recall:      0.9120
+  F1-Score:    0.8736
+  AUC:         0.9795
+  Sensitivity: 0.9120
+  Specificity: 0.8240
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k4_fold3_scores.npy
+
+Fold 3/4: Training SVM...
+  Accuracy:    0.8280
+  Precision:   0.7971
+  Recall:      0.8800
+  F1-Score:    0.8365
+  AUC:         0.9382
+  Sensitivity: 0.8800
+  Specificity: 0.7760
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k4_fold4_scores.npy
+
+Fold 4/4: Training SVM...
+  Accuracy:    0.8760
+  Precision:   0.8672
+  Recall:      0.8880
+  F1-Score:    0.8775
+  AUC:         0.9577
+  Sensitivity: 0.8880
+  Specificity: 0.8640
+
+============================================================
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.8660
+  Precision:   0.8394
+  Recall:      0.9060
+  F1-Score:    0.8712
+  Sensitivity: 0.9060
+  Specificity: 0.8260
+  AUC:         0.9646
+============================================================
+>>> CLASSICAL: cicddos2019 k=5
+Loaded 1000 vectors from cicddos2019
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 5-FOLD CROSS-VALIDATION (CICDDOS2019)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k5_fold1_scores.npy
+
+Fold 1/5: Training SVM...
+  Accuracy:    0.9100
+  Precision:   0.8727
+  Recall:      0.9600
+  F1-Score:    0.9143
+  AUC:         0.9862
+  Sensitivity: 0.9600
+  Specificity: 0.8600
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k5_fold2_scores.npy
+
+Fold 2/5: Training SVM...
+  Accuracy:    0.8850
+  Precision:   0.8532
+  Recall:      0.9300
+  F1-Score:    0.8900
+  AUC:         0.9807
+  Sensitivity: 0.9300
+  Specificity: 0.8400
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k5_fold3_scores.npy
+
+Fold 3/5: Training SVM...
+  Accuracy:    0.8650
+  Precision:   0.8288
+  Recall:      0.9200
+  F1-Score:    0.8720
+  AUC:         0.9632
+  Sensitivity: 0.9200
+  Specificity: 0.8100
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k5_fold4_scores.npy
+
+Fold 4/5: Training SVM...
+  Accuracy:    0.8150
+  Precision:   0.7944
+  Recall:      0.8500
+  F1-Score:    0.8213
+  AUC:         0.9323
+  Sensitivity: 0.8500
+  Specificity: 0.7800
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicddos2019_k5_fold5_scores.npy
+
+Fold 5/5: Training SVM...
+  Accuracy:    0.8650
+  Precision:   0.8476
+  Recall:      0.8900
+  F1-Score:    0.8683
+  AUC:         0.9529
+  Sensitivity: 0.8900
+  Specificity: 0.8400
+
+============================================================
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.8680
+  Precision:   0.8394
+  Recall:      0.9100
+  F1-Score:    0.8732
+  Sensitivity: 0.9100
+  Specificity: 0.8260
+  AUC:         0.9631
+============================================================
+>>> CLASSICAL: cicids2017 k=2
+Loaded 1000 vectors from cicids2017
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 2-FOLD CROSS-VALIDATION (CICIDS2017)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k2_fold1_scores.npy
+
+Fold 1/2: Training SVM...
+  Accuracy:    0.7080
+  Precision:   0.7342
+  Recall:      0.6520
+  F1-Score:    0.6907
+  AUC:         0.7330
+  Sensitivity: 0.6520
+  Specificity: 0.7640
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k2_fold2_scores.npy
+
+Fold 2/2: Training SVM...
+  Accuracy:    0.7020
+  Precision:   0.7205
+  Recall:      0.6600
+  F1-Score:    0.6889
+  AUC:         0.7672
+  Sensitivity: 0.6600
+  Specificity: 0.7440
+
+============================================================
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.7050
+  Precision:   0.7274
+  Recall:      0.6560
+  F1-Score:    0.6898
+  Sensitivity: 0.6560
+  Specificity: 0.7540
+  AUC:         0.7501
+============================================================
+>>> CLASSICAL: cicids2017 k=3
+Loaded 1000 vectors from cicids2017
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 3-FOLD CROSS-VALIDATION (CICIDS2017)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k3_fold1_scores.npy
+
+Fold 1/3: Training SVM...
+  Accuracy:    0.7096
+  Precision:   0.7303
+  Recall:      0.6647
+  F1-Score:    0.6959
+  AUC:         0.7368
+  Sensitivity: 0.6647
+  Specificity: 0.7545
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k3_fold2_scores.npy
+
+Fold 2/3: Training SVM...
+  Accuracy:    0.7147
+  Precision:   0.7400
+  Recall:      0.6647
+  F1-Score:    0.7003
+  AUC:         0.7829
+  Sensitivity: 0.6647
+  Specificity: 0.7651
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k3_fold3_scores.npy
+
+Fold 3/3: Training SVM...
+  Accuracy:    0.7027
+  Precision:   0.7248
+  Recall:      0.6506
+  F1-Score:    0.6857
+  AUC:         0.7724
+  Sensitivity: 0.6506
+  Specificity: 0.7545
+
+============================================================
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.7090
+  Precision:   0.7317
+  Recall:      0.6600
+  F1-Score:    0.6940
+  Sensitivity: 0.6600
+  Specificity: 0.7580
+  AUC:         0.7640
+============================================================
+>>> CLASSICAL: cicids2017 k=4
+Loaded 1000 vectors from cicids2017
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 4-FOLD CROSS-VALIDATION (CICIDS2017)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k4_fold1_scores.npy
+
+Fold 1/4: Training SVM...
+  Accuracy:    0.7200
+  Precision:   0.7350
+  Recall:      0.6880
+  F1-Score:    0.7107
+  AUC:         0.7677
+  Sensitivity: 0.6880
+  Specificity: 0.7520
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k4_fold2_scores.npy
+
+Fold 2/4: Training SVM...
+  Accuracy:    0.7120
+  Precision:   0.7573
+  Recall:      0.6240
+  F1-Score:    0.6842
+  AUC:         0.7607
+  Sensitivity: 0.6240
+  Specificity: 0.8000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k4_fold3_scores.npy
+
+Fold 3/4: Training SVM...
+  Accuracy:    0.7160
+  Precision:   0.7288
+  Recall:      0.6880
+  F1-Score:    0.7078
+  AUC:         0.7861
+  Sensitivity: 0.6880
+  Specificity: 0.7440
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k4_fold4_scores.npy
+
+Fold 4/4: Training SVM...
+  Accuracy:    0.6880
+  Precision:   0.7117
+  Recall:      0.6320
+  F1-Score:    0.6695
+  AUC:         0.7636
+  Sensitivity: 0.6320
+  Specificity: 0.7440
+
+============================================================
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.7090
+  Precision:   0.7332
+  Recall:      0.6580
+  F1-Score:    0.6931
+  Sensitivity: 0.6580
+  Specificity: 0.7600
+  AUC:         0.7695
+============================================================
+>>> CLASSICAL: cicids2017 k=5
+Loaded 1000 vectors from cicids2017
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 5-FOLD CROSS-VALIDATION (CICIDS2017)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k5_fold1_scores.npy
+
+Fold 1/5: Training SVM...
+  Accuracy:    0.7250
+  Precision:   0.7368
+  Recall:      0.7000
+  F1-Score:    0.7179
+  AUC:         0.7829
+  Sensitivity: 0.7000
+  Specificity: 0.7500
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k5_fold2_scores.npy
+
+Fold 2/5: Training SVM...
+  Accuracy:    0.6850
+  Precision:   0.7229
+  Recall:      0.6000
+  F1-Score:    0.6557
+  AUC:         0.7333
+  Sensitivity: 0.6000
+  Specificity: 0.7700
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k5_fold3_scores.npy
+
+Fold 3/5: Training SVM...
+  Accuracy:    0.7200
+  Precision:   0.7391
+  Recall:      0.6800
+  F1-Score:    0.7083
+  AUC:         0.7773
+  Sensitivity: 0.6800
+  Specificity: 0.7600
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k5_fold4_scores.npy
+
+Fold 4/5: Training SVM...
+  Accuracy:    0.7300
+  Precision:   0.7556
+  Recall:      0.6800
+  F1-Score:    0.7158
+  AUC:         0.8074
+  Sensitivity: 0.6800
+  Specificity: 0.7800
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/cicids2017_k5_fold5_scores.npy
+
+Fold 5/5: Training SVM...
+  Accuracy:    0.6750
+  Precision:   0.6966
+  Recall:      0.6200
+  F1-Score:    0.6561
+  AUC:         0.7269
+  Sensitivity: 0.6200
+  Specificity: 0.7300
+
+============================================================
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.7070
+  Precision:   0.7302
+  Recall:      0.6560
+  F1-Score:    0.6908
+  Sensitivity: 0.6560
+  Specificity: 0.7580
+  AUC:         0.7656
+============================================================
+>>> CLASSICAL: kddcup1999 k=2
+Loaded 1000 vectors from kddcup1999
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 2-FOLD CROSS-VALIDATION (KDDCUP1999)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k2_fold1_scores.npy
+
+Fold 1/2: Training SVM...
+  Accuracy:    0.9760
+  Precision:   1.0000
+  Recall:      0.9520
+  F1-Score:    0.9754
+  AUC:         0.9958
+  Sensitivity: 0.9520
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k2_fold2_scores.npy
+
+Fold 2/2: Training SVM...
+  Accuracy:    0.9880
+  Precision:   1.0000
+  Recall:      0.9760
+  F1-Score:    0.9879
+  AUC:         0.9957
+  Sensitivity: 0.9760
+  Specificity: 1.0000
+
+============================================================
+AVERAGE ACROSS 2 FOLDS:
+  Accuracy:    0.9820
+  Precision:   1.0000
+  Recall:      0.9640
+  F1-Score:    0.9816
+  Sensitivity: 0.9640
+  Specificity: 1.0000
+  AUC:         0.9957
+============================================================
+>>> CLASSICAL: kddcup1999 k=3
+Loaded 1000 vectors from kddcup1999
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 3-FOLD CROSS-VALIDATION (KDDCUP1999)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k3_fold1_scores.npy
+
+Fold 1/3: Training SVM...
+  Accuracy:    0.9701
+  Precision:   1.0000
+  Recall:      0.9401
+  F1-Score:    0.9691
+  AUC:         0.9933
+  Sensitivity: 0.9401
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k3_fold2_scores.npy
+
+Fold 2/3: Training SVM...
+  Accuracy:    0.9880
+  Precision:   1.0000
+  Recall:      0.9760
+  F1-Score:    0.9879
+  AUC:         0.9996
+  Sensitivity: 0.9760
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k3_fold3_scores.npy
+
+Fold 3/3: Training SVM...
+  Accuracy:    0.9910
+  Precision:   1.0000
+  Recall:      0.9819
+  F1-Score:    0.9909
+  AUC:         0.9937
+  Sensitivity: 0.9819
+  Specificity: 1.0000
+
+============================================================
+AVERAGE ACROSS 3 FOLDS:
+  Accuracy:    0.9830
+  Precision:   1.0000
+  Recall:      0.9660
+  F1-Score:    0.9826
+  Sensitivity: 0.9660
+  Specificity: 1.0000
+  AUC:         0.9955
+============================================================
+>>> CLASSICAL: kddcup1999 k=4
+Loaded 1000 vectors from kddcup1999
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 4-FOLD CROSS-VALIDATION (KDDCUP1999)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k4_fold1_scores.npy
+
+Fold 1/4: Training SVM...
+  Accuracy:    0.9760
+  Precision:   1.0000
+  Recall:      0.9520
+  F1-Score:    0.9754
+  AUC:         0.9962
+  Sensitivity: 0.9520
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k4_fold2_scores.npy
+
+Fold 2/4: Training SVM...
+  Accuracy:    0.9800
+  Precision:   1.0000
+  Recall:      0.9600
+  F1-Score:    0.9796
+  AUC:         0.9942
+  Sensitivity: 0.9600
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k4_fold3_scores.npy
+
+Fold 3/4: Training SVM...
+  Accuracy:    0.9880
+  Precision:   1.0000
+  Recall:      0.9760
+  F1-Score:    0.9879
+  AUC:         0.9996
+  Sensitivity: 0.9760
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k4_fold4_scores.npy
+
+Fold 4/4: Training SVM...
+  Accuracy:    0.9920
+  Precision:   1.0000
+  Recall:      0.9840
+  F1-Score:    0.9919
+  AUC:         0.9918
+  Sensitivity: 0.9840
+  Specificity: 1.0000
+
+============================================================
+AVERAGE ACROSS 4 FOLDS:
+  Accuracy:    0.9840
+  Precision:   1.0000
+  Recall:      0.9680
+  F1-Score:    0.9837
+  Sensitivity: 0.9680
+  Specificity: 1.0000
+  AUC:         0.9954
+============================================================
+>>> CLASSICAL: kddcup1999 k=5
+Loaded 1000 vectors from kddcup1999
+Attack: 500, Normal: 500
+
+============================================================
+CLASSICAL SVM 5-FOLD CROSS-VALIDATION (KDDCUP1999)
+WITH SCORE SAVING FOR ROC CURVES
+Config: RBF kernel, C=1.0, MinMaxScaler [0,1] — NO QuantileTransformer
+============================================================
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k5_fold1_scores.npy
+
+Fold 1/5: Training SVM...
+  Accuracy:    0.9700
+  Precision:   1.0000
+  Recall:      0.9400
+  F1-Score:    0.9691
+  AUC:         0.9954
+  Sensitivity: 0.9400
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k5_fold2_scores.npy
+
+Fold 2/5: Training SVM...
+  Accuracy:    0.9850
+  Precision:   1.0000
+  Recall:      0.9700
+  F1-Score:    0.9848
+  AUC:         0.9921
+  Sensitivity: 0.9700
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k5_fold3_scores.npy
+
+Fold 3/5: Training SVM...
+  Accuracy:    0.9850
+  Precision:   1.0000
+  Recall:      0.9700
+  F1-Score:    0.9848
+  AUC:         1.0000
+  Sensitivity: 0.9700
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k5_fold4_scores.npy
+
+Fold 4/5: Training SVM...
+  Accuracy:    0.9900
+  Precision:   1.0000
+  Recall:      0.9800
+  F1-Score:    0.9899
+  AUC:         0.9991
+  Sensitivity: 0.9800
+  Specificity: 1.0000
+  Saved scores: /root/ddos-framework/results/scores/classical_svm/kddcup1999_k5_fold5_scores.npy
+
+Fold 5/5: Training SVM...
+  Accuracy:    0.9900
+  Precision:   1.0000
+  Recall:      0.9800
+  F1-Score:    0.9899
+  AUC:         0.9888
+  Sensitivity: 0.9800
+  Specificity: 1.0000
+
+============================================================
+AVERAGE ACROSS 5 FOLDS:
+  Accuracy:    0.9840
+  Precision:   1.0000
+  Recall:      0.9680
+  F1-Score:    0.9837
+  Sensitivity: 0.9680
+  Specificity: 1.0000
+  AUC:         0.9951
+============================================================

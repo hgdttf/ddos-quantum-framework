@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DDoS Framework</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; min-height: 100vh; }
+        .hero { text-align: center; padding: 60px 20px; }
+        .hero h1 { color: #d4af37; font-size: 42px; margin-bottom: 10px; }
+        .hero p { color: #6e6e80; font-size: 16px; max-width: 500px; margin: 0 auto 40px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto; padding: 0 20px 60px; }
+        .card {
+            background: #1a1a24;
+            border: 1px solid #2a2a3a;
+            border-radius: 16px;
+            padding: 30px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s;
+        }
+        .card:hover { border-color: #d4af37; transform: translateY(-4px); }
+        .card h2 { color: #d4af37; font-size: 20px; margin-bottom: 10px; }
+        .card p { color: #a0a0b0; font-size: 14px; line-height: 1.5; }
+        .disabled {
+            opacity: 0.5;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+        .preparing {
+            color: #fbbf24;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .ready {
+            color: #4ade80;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Quantum-Classical Hybrid DDoS Framework</h1>
+        <p>Real-time attack simulation, feature extraction, and hybrid detection</p>
+    </div>
+
+    <div class="cards">
+        <a href="/attack" class="card {% if not baseline_ready %}disabled{% endif %}">
+            <h2>Algorithm 1: Attack</h2>
+            <p>Launch SYN, HTTP, or UDP flood attacks with configurable intensity and duration.</p>
+            {% if not baseline_ready %}
+                <p class="preparing">⏳ System preparing... please wait</p>
+            {% else %}
+                <p class="ready">✅ Ready</p>
+            {% endif %}
+        </a>
+
+        <a href="/features" class="card">
+            <h2>Algorithm 2: Features</h2>
+            <p>Extract and normalize 6 traffic features from PCAP captures.</p>
+        </a>
+
+        <a href="/detection/result" class="card">
+            <h2>Detection Results</h2>
+            <p>View all real-time detection results and alerts from monitoring.</p>
+        </a>
+
+        <a href="/detect" class="card">
+            <h2>Manual Detection</h2>
+            <p>Run standalone real-time detection with custom parameters.</p>
+        </a>
+
+        <a href="/results" class="card">
+            <h2>Results</h2>
+            <p>Browse all generated PCAP files, CSV features, and reports.</p>
+        </a>
+
+        <a href="http://127.0.0.1:8080" target="_blank" class="card">
+            <h2>Target Website</h2>
+            <p>Open the FirstTrust Bank target server (port 8080).</p>
+        </a>
+    </div>
+</body>
+</html>

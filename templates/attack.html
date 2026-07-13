@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Launch Attack</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #0a0a0f; color: #fff; padding: 40px; }
+        .container { max-width: 500px; margin: 0 auto; }
+        h1 { color: #d4af37; margin-bottom: 10px; }
+        .back { color: #6e6e80; text-decoration: none; display: inline-block; margin-bottom: 30px; }
+        form { background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 16px; padding: 30px; }
+        label { display: block; color: #a0a0b0; font-size: 13px; margin-bottom: 6px; margin-top: 20px; }
+        select, input {
+            width: 100%;
+            padding: 12px;
+            background: #12121a;
+            border: 1px solid #2a2a3a;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 14px;
+        }
+        select:focus, input:focus { outline: none; border-color: #d4af37; }
+        .hint { color: #6e6e80; font-size: 12px; margin-top: 6px; }
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #d4af37;
+            color: #0a0a0f;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 30px;
+            cursor: pointer;
+        }
+        button:hover { background: #e5c048; }
+        .dataset-section {
+            border-top: 1px solid #2a2a3a;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+        .dataset-label { color: #4ade80; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back">← Back to Home</a>
+        <h1>Launch Attack</h1>
+
+        <form method="POST" action="/attack">
+            <label>Attack Type</label>
+            <select name="attack_type" required>
+                <option value="SYN">SYN Flood</option>
+                <option value="HTTP">HTTP Flood</option>
+                <option value="UDP">UDP Flood</option>
+            </select>
+            <p class="hint">Type of DDoS attack to simulate</p>
+
+            <label>Intensity</label>
+            <select name="intensity" required>
+                <option value="LOW">Low (100 pkt/s)</option>
+                <option value="MEDIUM">Medium (1,000 pkt/s)</option>
+                <option value="HIGH">High (10,000 pkt/s)</option>
+            </select>
+            <p class="hint">Packet generation rate</p>
+
+            <label>Duration (seconds)</label>
+            <input type="number" name="duration" value="5" min="1" max="300" required>
+            <p class="hint">How long the attack runs</p>
+
+            {% if datasets %}
+            <div class="dataset-section">
+                <label class="dataset-label">Dataset (optional)</label>
+                <select name="dataset_file">
+                    <option value="">-- Generate synthetic traffic --</option>
+                    {% for ds in datasets %}
+                    <option value="{{ ds }}">{{ ds }}</option>
+                    {% endfor %}
+                </select>
+                <p class="hint">Select a dataset to replay real attack traffic. Leave empty for synthetic.</p>
+            </div>
+            {% endif %}
+
+            <button type="submit">Launch Attack</button>
+        </form>
+    </div>
+</body>
+</html>
